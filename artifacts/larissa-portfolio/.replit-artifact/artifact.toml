@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Larissa Olimpio | Portfólio"
+description = "Portfólio de uma desenvolvedora full stack com experiência, projetos, escrita técnica e contato profissional, em português e otimizado para desktop e celular."
+version = "1.0.0"
+id = "artifacts/larissa-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24808
+
+[services.development]
+run = "pnpm --filter @workspace/larissa-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/larissa-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/larissa-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24808"
+BASE_PATH = "/"
