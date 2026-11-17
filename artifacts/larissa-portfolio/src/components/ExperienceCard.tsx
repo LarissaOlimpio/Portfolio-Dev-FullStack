@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import type { Experience } from '../data/experience';
+import type { Language } from '../data/config';
+import { copy } from '../data/config';
 
-export function ExperienceCard({ item }: { item: Experience }) {
+export function ExperienceCard({ item, language }: { item: Experience; language: Language }) {
   const [expanded, setExpanded] = useState(false);
   const reduceMotion = useReducedMotion();
+  const labels = copy[language];
   return (
     <motion.article
       className="experience-card"
+      data-testid={`card-experience-${item.company.toLowerCase()}`}
       layout={!reduceMotion}
       onClick={() => setExpanded((value) => !value)}
       onKeyDown={(event) => {
@@ -19,13 +23,13 @@ export function ExperienceCard({ item }: { item: Experience }) {
       role="button"
       tabIndex={0}
       aria-expanded={expanded}
-      aria-label={`${expanded ? 'Recolher' : 'Expandir'} experiência em ${item.company}`}
+      aria-label={`${expanded ? labels.collapseExperience : labels.expandExperience}: ${item.company}`}
     >
       <span className="date-pill">{item.date}</span>
       <h3>{item.company}</h3>
       <h4>{item.role}</h4>
       <p>{item.summary}</p>
-      <div className="expand-hint">{expanded ? '− Fechar detalhes' : '+ Ler detalhes'}</div>
+      <div className="expand-hint">{expanded ? `− ${labels.collapseExperience}` : `+ ${labels.expandExperience}`}</div>
       <AnimatePresence initial={false}>
         {expanded && (
           <motion.div

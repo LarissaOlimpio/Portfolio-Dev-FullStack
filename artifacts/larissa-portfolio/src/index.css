@@ -647,3 +647,102 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
+
+.nav-actions { display:flex; align-items:center; gap:9px; }
+.nav-toggle { display:inline-flex; width:37px; height:37px; align-items:center; justify-content:center; border:1px solid #35415e; border-radius:999px; color:#f2f5ff; background:transparent; cursor:pointer; font:700 10px 'DM Mono',monospace; transition:background .2s,color .2s,border-color .2s; }
+.nav-toggle:hover { background:rgba(255,255,255,.08); border-color:#7180a3; }
+.education-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+.education-card { display:flex; gap:16px; min-height:190px; padding:22px; border:1px solid rgba(255,255,255,.09); border-radius:22px; background:#111829; }
+.education-icon { flex:0 0 38px; width:38px; height:38px; display:grid; place-items:center; border-radius:12px; background:#ffd43b; color:#10162a; font:700 10px 'DM Mono',monospace; }
+.education-copy { min-width:0; }
+.education-status { display:inline-flex; margin-bottom:10px; border-radius:999px; padding:5px 9px; color:#111729; background:#ffd43b; font:500 9px 'DM Mono',monospace; }
+.education-status.inProgress { background:rgba(126,160,255,.18); color:#adc1ff; }
+.education-card h3 { margin:0 0 7px; font-size:15px; line-height:1.45; letter-spacing:-.035em; }
+.education-institution,.education-detail { margin:0; color:#aab4cd; font-size:11px; line-height:1.65; }
+.education-detail { margin-top:6px; color:#8996b3; }
+.volunteer-card { display:grid; grid-template-columns:74px 1fr; gap:22px; align-items:start; padding:28px; border:1px solid rgba(255,255,255,.09); border-radius:24px; background:#111829; }
+.volunteer-mark { display:grid; place-items:center; width:62px; height:62px; border-radius:18px; background:#2447e8; color:#fff; font:800 16px 'DM Mono',monospace; letter-spacing:-.08em; box-shadow:5px 5px 0 #ffd43b; }
+.volunteer-card p { margin:0; color:#aab4cd; font-size:12px; line-height:1.9; }
+.video-frame { position:relative; overflow:hidden; aspect-ratio:1.5; border:1px solid #35415e; border-radius:16px; background:#071026; box-shadow:0 18px 40px rgba(0,0,0,.22); }
+.project-video { display:block; width:100%; height:100%; object-fit:contain; background:#071026; }
+.video-placeholder { display:flex; align-items:center; justify-content:center; padding:24px 24px 48px; color:#dce5ff; background:radial-gradient(ellipse at 50% 30%,#182b63 0%,#091329 68%); text-align:center; }
+.video-placeholder-content { display:flex; flex-direction:column; align-items:center; gap:9px; }
+.video-play { display:grid; place-items:center; width:46px; height:46px; border:1px solid rgba(255,255,255,.28); border-radius:50%; color:#ffd43b; }
+.video-title { font-size:12px; font-weight:800; }
+.video-description { max-width:245px; color:#9eabc8; font-size:9px; line-height:1.6; }
+.video-controls { position:absolute; inset:auto 0 0; display:flex; align-items:center; gap:10px; height:37px; padding:0 15px; color:#dce5ff; background:rgba(4,10,25,.8); font:9px 'DM Mono',monospace; }
+.video-progress { flex:1; height:3px; border-radius:9px; background:rgba(255,255,255,.25); }
+.video-progress i { display:block; width:12%; height:100%; border-radius:inherit; background:#ffd43b; }
+.video-time { color:#aab4cd; }
+.portrait-card.has-photo:before { display:none; }
+.profile-photo { position:absolute; inset:0; width:100%; height:100%; border-radius:inherit; object-fit:cover; object-position:center 42%; }
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --background: 225 43% 97%;
+  --foreground: 225 43% 12%;
+  --border: 222 28% 86%;
+  --card: 0 0% 100%;
+  --card-foreground: 225 43% 12%;
+  --card-border: 222 28% 86%;
+  --sidebar: 225 43% 97%;
+  --sidebar-foreground: 225 43% 12%;
+  --sidebar-border: 222 28% 86%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 225 43% 12%;
+  --popover-border: 222 28% 86%;
+  --secondary: 222 35% 93%;
+  --secondary-foreground: 225 43% 12%;
+  --muted: 222 35% 93%;
+  --muted-foreground: 222 22% 37%;
+  --input: 222 28% 78%;
+  --ring: 230 80% 45%;
+  --page-bg: #f4f6fc;
+  --page-text: #111c3c;
+  --page-muted: #4b5876;
+  --page-subtle: #586582;
+  --page-surface: #ffffff;
+  --page-line: #dce3f1;
+}
+
+html[data-theme='light'] body { background:var(--page-bg); color:var(--page-text); }
+html[data-theme='light'] .nav-wrap { background:rgba(244,246,252,.9); border-bottom-color:rgba(19,35,70,.12); }
+html[data-theme='light'] .logo { color:var(--page-text); }
+html[data-theme='light'] .nav-links a { color:#53617e; }
+html[data-theme='light'] .nav-links a:hover,html[data-theme='light'] .nav-links a.active { color:var(--page-text); }
+html[data-theme='light'] .nav-toggle { color:var(--page-text); border-color:#c4cde0; }
+html[data-theme='light'] .nav-toggle:hover { background:#e6ebf6; border-color:#98a5c0; }
+html[data-theme='light'] .hero-copy,html[data-theme='light'] .about-copy p,
+html[data-theme='light'] .project-info p,html[data-theme='light'] .principle p,
+html[data-theme='light'] .volunteer-card p { color:var(--page-muted); }
+html[data-theme='light'] .typed-line { color:var(--page-subtle); }
+html[data-theme='light'] .typed-line strong { color:#2447c8; }
+html[data-theme='light'] .section-subtitle { color:var(--page-subtle); }
+html[data-theme='light'] .pill:not(.pill-highlight) { color:#3f4c68; border-color:#c8d0e0; background:rgba(255,255,255,.55); }
+html[data-theme='light'] .education-card,html[data-theme='light'] .volunteer-card,
+html[data-theme='light'] .project-card { background:var(--page-surface); border-color:var(--page-line); }
+html[data-theme='light'] .education-institution { color:#46536f; }
+html[data-theme='light'] .education-detail { color:#56627a; }
+html[data-theme='light'] .education-status.inProgress { color:#203a9b; background:#e4eaff; }
+html[data-theme='light'] .education-card h3,html[data-theme='light'] .project-info h3,
+html[data-theme='light'] .principle h3 { color:var(--page-text); }
+html[data-theme='light'] .project-badge { color:#805e00; }
+html[data-theme='light'] .principles-grid { border-top-color:var(--page-line); }
+html[data-theme='light'] .education { border-top-color:var(--page-line); color:var(--page-muted); }
+html[data-theme='light'] .education strong { color:var(--page-text); }
+html[data-theme='light'] .footer { color:#56627a; }
+html[data-theme='light'] .btn-outline { color:var(--page-text); border-color:#9aa6bf; }
+html[data-theme='light'] .contact-panel .btn-outline { color:#fff; border-color:rgba(255,255,255,.45); }
+html[data-theme='light'] .back-link { color:#2447c8; }
+html[data-theme='light'] :focus-visible { outline-color:#2447c8; }
+
+@media (max-width: 800px) {
+  .education-grid { grid-template-columns:1fr; }
+  .education-card { min-height:unset; }
+}
+@media (max-width: 480px) {
+  .nav-inner { gap:9px; }
+  .nav-actions { gap:5px; }
+  .nav-toggle { width:32px; height:32px; }
+  .volunteer-card { grid-template-columns:1fr; gap:18px; padding:22px; }
+}

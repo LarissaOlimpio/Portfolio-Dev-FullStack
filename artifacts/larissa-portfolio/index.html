@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Larissa Olimpio | Desenvolvedora Full Stack</title>
-    <meta name="description" content="Portfólio de Larissa Olimpio, desenvolvedora full stack em Java, Spring Boot e React." />
+    <meta name="description" content="Portfólio de Larissa Olimpio, desenvolvedora full stack em Java, Spring Boot, React e TypeScript." />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Larissa Olimpio | Desenvolvedora Full Stack" />
-    <meta property="og:description" content="Desenvolvedora full stack em Java, Spring Boot e React. Projetos, experiências e anotações." />
+    <meta property="og:description" content="Desenvolvedora full stack em Java, Spring Boot, React e TypeScript. Experiência e projetos." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/og-image.svg" />
     <meta property="og:locale" content="pt_BR" />
@@ -16,6 +16,20 @@
     <meta name="twitter:description" content="Desenvolvedora full stack em Java, Spring Boot e React." />
     <meta name="theme-color" content="#0a0e1a" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (() => {
+        try {
+          const theme = localStorage.getItem('larissa-portfolio-theme') === 'light' ? 'light' : 'dark';
+          const language = localStorage.getItem('larissa-portfolio-language') === 'en' ? 'en' : 'pt';
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.classList.toggle('dark', theme === 'dark');
+          document.documentElement.lang = language === 'en' ? 'en' : 'pt-BR';
+        } catch {
+          document.documentElement.dataset.theme = 'dark';
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
