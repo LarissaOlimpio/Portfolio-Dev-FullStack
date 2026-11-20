@@ -1,0 +1,29 @@
+kind = "video"
+videoAspectRatio = "16:9"
+previewPath = "/portfolio-demo/"
+title = "Larissa Portfolio Demo"
+description = "A 30-second animated showcase of Larissa Olimpio's bilingual full-stack developer portfolio and its key features."
+version = "1.0.0"
+id = "artifacts/portfolio-demo"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/portfolio-demo/" ]
+localPort = 25167
+
+[services.development]
+run = "pnpm --filter @workspace/portfolio-demo run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/portfolio-demo", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/portfolio-demo/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25167"
+BASE_PATH = "/portfolio-demo/"
