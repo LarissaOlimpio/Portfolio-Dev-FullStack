@@ -7,7 +7,7 @@ import { copy, education, githubUrl, linkedinUrl, principles, profile } from './
 import { experiences } from './data/experience';
 import { projects } from './data/projects';
 import { skills } from './data/skills';
-import profilePhoto from '@assets/imagem_corrigida_1794954638366.jpg';
+import profilePhoto from './assets/imagem_corrigida_1794954638366.jpg';
 import { Section } from './components/Section';
 import { Pill } from './components/Pill';
 import { ExperienceCard } from './components/ExperienceCard';

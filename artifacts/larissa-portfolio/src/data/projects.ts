@@ -1,6 +1,6 @@
 import type { Language } from './config';
-import bootcampVideo from '@assets/bootcamp-dados_1794954607381.mp4';
-import workoutVideo from '@assets/workout-Tracker_1794954612834.mp4';
+import bootcampVideo from '../assets/bootcamp-dados_1794954607381.mp4';
+import workoutVideo from '../assets/workout-Tracker_1794954612834.mp4';
 
 export type Project = {
   id: string;
