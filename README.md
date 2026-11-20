@@ -16,7 +16,7 @@ Portuguese 🇧🇷 · English 🇺🇸
 </div>
 
 ---
-
+🔗 **Live site:** [https://larissa-portfolio-seven.vercel.app/](https://larissa-portfolio-seven.vercel.app/)
 ## 📖 About
 
 This portfolio presents the background, experience, education, engineering principles, volunteer work, and software and data projects of Larissa Olimpio, a full-stack developer. Everything is available in **Portuguese and English**, with light and dark themes.
@@ -25,7 +25,17 @@ This portfolio presents the background, experience, education, engineering princ
 
 A 16:9 walkthrough of the profile, skills, experience, projects, and engineering values.
 
-https://github.com/user-attachments/assets/39642ffc-eee6-43a1-8d58-9812e7eda617
+
+
+https://github.com/user-attachments/assets/53f1b1db-6d3e-4b44-87d2-adea958acbdb
+
+
+## ✨ Images from portfolio
+<img width="1822" height="855" alt="portfolio1" src="https://github.com/user-attachments/assets/9bf7375e-36e2-4571-8e20-ca6b0a6d7021" />
+
+
+<img width="1812" height="932" alt="portfolio2" src="https://github.com/user-attachments/assets/cf0f2711-aa51-412f-aad5-f0d50434e719" />
+
 
 ## ✨ Features
 
