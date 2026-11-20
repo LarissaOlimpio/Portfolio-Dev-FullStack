@@ -1,52 +1,73 @@
+<div align="center">
+
 # Larissa Olimpio — Portfolio
 
-A bilingual portfolio for Larissa Olimpio, a full-stack developer. It presents her background, experience, education, engineering principles, volunteer work, and software and data projects in Portuguese and English.
+**A bilingual portfolio for a full-stack developer**
+Portuguese 🇧🇷 · English 🇺🇸
 
-## 30-second animated demo
+![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-The 16:9 demo highlights the portfolio’s profile, skills, experience, projects, and engineering values.
+[Demo](#-30-second-animated-demo) · [Features](#-features) · [Tech stack](#-tech-stack) · [Run locally](#-run-locally) · [Structure](#-project-structure)
 
-<video controls preload="metadata" poster="../portfolio-demo/public/images/larissa-portrait.jpg" width="100%">
-  <source src="../portfolio-demo/public/larissa-portfolio-demo.mp4" type="video/mp4" />
-  Your browser does not support embedded video. <a href="../portfolio-demo/public/larissa-portfolio-demo.mp4">Watch or download the demo video</a>.
-</video>
+</div>
 
-[Watch or download the 30-second MP4](../portfolio-demo/public/larissa-portfolio-demo.mp4)
+---
 
-## Features
+## 📖 About
 
-- **Portuguese and English:** Switch languages from the navigation. The selection is saved in local storage and updates the page language and social metadata.
-- **Light and dark themes:** Toggle themes; the selection persists across visits.
-- **Animated introduction:** Typewriter-style current-role line, profile image, and links to projects and LinkedIn.
-- **About and skills:** Profile narrative and technology/toolkit list.
-- **Experience:** Expandable cards for Embraer, Alura, and Supliu, with keyboard support.
-- **Education:** Current and completed programs with status labels.
-- **Featured projects:** Workout Tracker, Events API, and a digital-retail Business Intelligence project, with technology tags, video or browser previews, and repository links.
-- **Engineering principles and volunteer work:** Sections about engineering practices, thoughtful AI use, learning, and ONE Next Education.
-- **Contact and social links:** Navigation to the contact section, plus GitHub and LinkedIn links.
-- **Responsive and accessible presentation:** Layout adapts to smaller screens, honors reduced-motion preferences, and includes semantic labels and visible keyboard focus.
-- **Page metadata and fallback route:** Localized page/social metadata and a not-found page.
+This portfolio presents the background, experience, education, engineering principles, volunteer work, and software and data projects of Larissa Olimpio, a full-stack developer. Everything is available in **Portuguese and English**, with light and dark themes.
 
-## Technologies
+## 🎬 30-second animated demo
 
-- React 19 and TypeScript
-- Vite 7
-- Wouter for client-side routing
-- Framer Motion for animations and expandable experience cards
-- Tailwind CSS 4 and custom CSS
-- Radix UI primitives for reusable interface components
-- Lucide React icons
-- Plus Jakarta Sans and DM Mono fonts
-- Browser local storage for language and theme preferences
+A 16:9 walkthrough of the profile, skills, experience, projects, and engineering values.
 
-The portfolio is a frontend-only application; its profile, experience, education, skills, and project content is maintained in TypeScript data files.
+https://github.com/user-attachments/assets/39642ffc-eee6-43a1-8d58-9812e7eda617
 
-## Run locally
+## ✨ Features
+
+| | Feature | Details |
+|---|---|---|
+| 🌐 | **Bilingual** | Switch between Portuguese and English from the navigation. The choice is saved in local storage and updates the page language and social metadata. |
+| 🌗 | **Light and dark themes** | Toggle themes; the selection persists across visits. |
+| ⌨️ | **Animated introduction** | Typewriter-style current-role line, profile image, and links to projects and LinkedIn. |
+| 🧰 | **About and skills** | Profile narrative and a technology/toolkit list. |
+| 💼 | **Experience** | Expandable cards for Embraer, Alura, and Supliu, with keyboard support. |
+| 🎓 | **Education** | Current and completed programs with status labels. |
+| 🚀 | **Featured projects** | Workout Tracker, Events API, and a digital-retail Business Intelligence project, with technology tags, video or browser previews, and repository links. |
+| 🧭 | **Principles and volunteer work** | Engineering practices, thoughtful AI use, continuous learning, and ONE Next Education. |
+| 📬 | **Contact and social links** | Contact section, plus GitHub and LinkedIn. |
+| ♿ | **Responsive and accessible** | Adapts to smaller screens, honors reduced-motion preferences, and includes semantic labels and visible keyboard focus. |
+| 🔎 | **Metadata and fallback route** | Localized page and social metadata, and a not-found page. |
+
+## 🛠 Tech stack
+
+| Area | Tools |
+|---|---|
+| **Core** | React 19, TypeScript, Vite 7 |
+| **Routing** | Wouter |
+| **Animation** | Framer Motion |
+| **Styling** | Tailwind CSS 4, custom CSS |
+| **UI primitives** | Radix UI, Lucide React icons |
+| **Typography** | Plus Jakarta Sans, DM Mono |
+| **Persistence** | Browser local storage (language and theme) |
+
+> The portfolio is a **frontend-only** application. Profile, experience, education, skills, and project content live in TypeScript data files.
+
+## 💻 Run locally
+
+**Requirements:** Node.js and [pnpm](https://pnpm.io/).
 
 From the workspace root:
 
 ```sh
+# Install dependencies
 pnpm install
+
+# Start the dev server
 pnpm --filter @workspace/larissa-portfolio run dev
 ```
 
@@ -56,8 +77,31 @@ Build the production site:
 pnpm --filter @workspace/larissa-portfolio run build
 ```
 
-The Vite configuration accepts optional `PORT` and `BASE_PATH` environment variables. Their defaults are `5173` and `/`.
+The Vite configuration accepts optional environment variables:
 
-## Credits
+| Variable | Default | Purpose |
+|---|---|---|
+| `PORT` | `5173` | Dev server port |
+| `BASE_PATH` | `/` | Base path for the built site |
 
-This portfolio and its animated demonstration were created with the help of **Replit’s AI**.
+## 🗂 Project structure
+
+This repository is a **pnpm monorepo**. The portfolio app lives in `artifacts/larissa-portfolio`.
+
+```text
+.
+├── artifacts/
+│   ├── larissa-portfolio/   # Portfolio app (React + Vite)
+│   ├── portfolio-demo/      # Animated demo video components
+│   ├── api-server/
+│   └── mockup-sandbox/
+├── lib/
+├── scripts/
+├── package.json
+├── pnpm-workspace.yaml
+└── README.md
+```
+
+## 🙌 Credits
+
+This portfolio and its animated demonstration were created with the help of **Replit's AI**.
