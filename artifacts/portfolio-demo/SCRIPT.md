@@ -13,7 +13,7 @@
 
 | Shot | Time | Focus | Main transition |
 |---|---:|---|---|
-| 01 | 0–5 s | Larissa / `larissa.dev` | Portrait scales through lens; yellow ellipse carries |
+| 01 | 0–5 s | Larissa / `larissa.dev` | Portrait scales through lens; yellow backing panel carries |
 | 02 | 5–11 s | About, skills, engineering | Ellipse opens into a tracked skills field |
 | 03 | 11–17 s | Career: Embraer, Alura, Supliu | Electric-blue panel folds into project browser |
 | 04 | 17–24 s | Workout Tracker + data analytics | Dashboard chart line becomes underline |
@@ -33,11 +33,11 @@
 
 **Composition:** Midnight navy field. The supplied illustrated portrait fills the right half at ~73% of frame height, tilted slightly in a cobalt frame with a yellow offset backing. Large type occupies the left third; 5% safe inset.
 
-**Artistic idea:** The yellow ellipse drawn around the word “works” is the same shape as the portrait backing; its stroke sweeps around the portrait, then becomes a lens-ring.
+**Artistic idea:** The portrait’s cobalt frame and offset yellow backing create a crisp graphic silhouette against the deep navy, while the underline beneath “works” gives the copy its only yellow mark.
 
-**Choreography:** 0.00–0.20: portrait and name arrive as a sharp paired snap. 0.30–0.75: brand label locks in; ellipse traces. 0.90–1.45: headline reveals on two beats. 1.60–2.70: portrait makes a subtle scale settle while periwinkle orbit lines parallax. 2.75–3.35: skill line types in. 3.75–5.00: ring expands beyond frame and the portrait pushes through it; keep the face visible until the next shot arrives.
+**Choreography:** 0.00–0.20: portrait and name arrive as a sharp paired snap. 0.30–0.75: brand label locks in; yellow backing panel settles behind the portrait. 0.90–1.45: headline reveals on two beats. 1.60–2.70: portrait makes a subtle scale settle. 2.75–3.35: skill line types in. 3.75–5.00: portrait pushes through the lens; keep the face unobstructed until the next shot arrives.
 
-**Handoff:** Portrait eye and ring remain centered during a 3x push; incoming skills pills appear inside the same ring before it clears. Combined scale-through + ellipse aperture + type shear.
+**Handoff:** The portrait frame scales through the lens while the headline shears away; incoming skills pills appear inside the outgoing cobalt rectangle as it opens into their field.
 
 **Assets/technique:** Supplied portrait `public/images/larissa-portrait.jpg`; CSS planes, SVG ellipse; Plus Jakarta Sans and DM Mono.
 
@@ -86,7 +86,7 @@
 
 **Artistic idea:** The portfolio's real project images are not generic cards: each browser window fills the lens, and a graph line is traced over the dashboard's own plotted geometry.
 
-**Choreography:** 17.00–17.55: address bar expands into browser frame. 17.65–19.50: Workout Tracker poster reveals via split aperture; title and stack of authentic project technologies arrive sequentially. 19.65–20.15: browser pushes through the lens, changing to the data analytics still. 20.35–21.55: three chart strokes draw in succession; `Digital Retail BI` and pipeline labels appear. 21.70–22.35: 160ms hard cut to Events API project panel. 22.50–23.20: project tags pop; 23.30–24.00: frame folds to a small yellow square, carried into final scene.
+**Choreography:** 17.00–17.55: address bar expands into browser frame. 17.65–19.50: Workout Tracker poster reveals via split aperture and holds at a fixed crop; title and stack of authentic project technologies arrive sequentially. 19.65–20.15: a flat split reveal replaces it with the data analytics still. 20.35–21.55: three chart strokes draw in succession; `Digital Retail BI` and pipeline labels appear. 21.70–22.35: 160ms hard cut to Events API project panel. 22.50–23.20: project tags pop; 23.30–24.00: frame folds to a small yellow square, carried into final scene.
 
 **Handoff:** Browser frame folds into an inset square, then unfolds as the end-card's signature bracket. Compound push-through + chart trace + fold.
 

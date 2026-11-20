@@ -17,7 +17,6 @@ export function Scene1() {
         <p className="brand-tag" style={{ marginTop: '2.8vmin' }}>FULL STACK · JAVA · REACT</p>
       </motion.div>
       <motion.div className="absolute mono" style={{ right: '8%', bottom: '7%', fontSize: '2.5vmin', color: '#f2f5ff', zIndex: 3 }} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .75, duration: .45 }}>larissa<span className="yellow">.dev</span></motion.div>
-      <motion.div className="ring" style={{ left: '59%', top: '17%', width: '28vmin', height: '28vmin' }} initial={{ scale: .3, opacity: 0, rotate: -70 }} animate={{ scale: [1, 1.09, 1], opacity: 1, rotate: 8 }} transition={{ duration: 3.2, delay: .5, ease: 'easeInOut' }} />
       <div className="absolute mono" style={{ right: '8%', top: '9%', color: '#8d9bb9', fontSize: '1.5vmin' }}>01 / INTRO</div>
     </motion.section>
   );

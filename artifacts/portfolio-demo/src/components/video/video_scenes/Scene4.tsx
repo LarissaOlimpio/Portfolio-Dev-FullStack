@@ -10,7 +10,7 @@ export function Scene4() {
       <motion.div className="absolute eyebrow" style={{ left: '7%', top: '9%' }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .08 }}>SELECTED WORK / PROJETOS</motion.div>
       <motion.div className="browser absolute" style={{ left: '7%', top: '18%', width: '54%', height: '69%' }} initial={{ opacity: 0, x: -35, rotateY: -12, scale: .88 }} animate={{ opacity: 1, x: 0, rotateY: 0, scale: 1 }} transition={{ delay: .15, duration: .72, ease }} exit={{ scale: 2.9, x: '35%', opacity: 0 }}>
         <div className="browser-bar"><i className="browser-dot" /><i className="browser-dot" /><i className="browser-dot" /><div className="browser-address" /></div>
-        <div style={{ height: 'calc(100% - 5.5vmin)', overflow: 'hidden' }}><motion.img className="project-image" src={workout} alt="" initial={{ scale: 1.2 }} animate={{ scale: [1.2, 1.08, 1.12] }} transition={{ duration: 6.4, ease: 'easeInOut' }} /></div>
+        <div style={{ height: 'calc(100% - 5.5vmin)', overflow: 'hidden' }}><motion.img className="project-image" src={workout} alt="" initial={{ scale: 1 }} animate={{ scale: 1 }} /></div>
       </motion.div>
       <motion.div className="absolute" style={{ left: '67%', top: '23%', width: '26%' }} initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .48, duration: .5, ease }}>
         <div className="mono yellow" style={{ fontSize: '1.55vmin' }}>01 — FULL STACK</div>
